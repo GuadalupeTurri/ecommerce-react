@@ -1,0 +1,27 @@
+.logo{
+    width: 100px;
+ 
+}
+.menuTienda{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around
+}
+.menuImg{
+    padding: 15px;
+}
+.menuTienda ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-right: 40%;
+
+}
+.menuTienda li{
+    margin: 20px;
+    font-size: 20px
+}
+.Cart{
+    display: flex;
+    margin: 20px;
+}

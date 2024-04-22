@@ -1,12 +1,18 @@
+import NavBar from './components/NavBar'
 import './App.css'
+import ItemListContainer from './components/ItemListContainer'
+
 
 function App() {
  
 
   return (
+     
     <div>
-      <h1>Hola mundo!!</h1>
+      <NavBar/>
+      <ItemListContainer saludo = "Bienvenidos a la RawShop"/>
     </div>
+    
   )
 }
 
