@@ -7,7 +7,6 @@
     position: relative;
 } 
 .imgProps img{
-    position:absolute;
     width: 100%;
-   
+ 
 }

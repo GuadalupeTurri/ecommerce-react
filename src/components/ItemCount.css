@@ -1,0 +1,10 @@
+.contador{
+    display: flex;
+    flex-direction: row;
+}
+.contador .botones-contador{
+    margin: 7px;
+    border :  solid black 2px;
+    border-radius: 10px;
+    
+}
