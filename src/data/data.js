@@ -37,7 +37,25 @@ const products = [
         category: "estampadas",
         image: "https://static.wixstatic.com/media/baac51_34821e1460024305a72be06274bd65d6~mv2_d_2000_1500_s_2.jpg/v1/fill/w_500,h_375,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/baac51_34821e1460024305a72be06274bd65d6~mv2_d_2000_1500_s_2.jpg" 
     },
-    
+    {
+        id: "Guah12j31",
+        name: "Gorra azul",
+        description: "Materiales: 100% poliéster. Somos una marca comprometida con el medio ambiente con muchos de nuestros productos hechos con material sustentables. ",
+        price: 9500,
+        stock: 10,
+        category: "estampadas",
+        image: "https://static.wixstatic.com/media/baac51_e0ebe39677864d7f934e2544bbf9ae19~mv2_d_2000_1500_s_2.jpg/v1/fill/w_500,h_375,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/baac51_e0ebe39677864d7f934e2544bbf9ae19~mv2_d_2000_1500_s_2.jpg" 
+    },
+
+     {
+        id: "Guah12q31",
+        name: "Gorra gris",
+        description: "Materiales: 100% poliéster",
+        price: 10000,
+        stock: 7,
+        category: "estampadas",
+        image: "https://static.wixstatic.com/media/baac51_444fa6e3add545a6b3757f46a11ee9de~mv2_d_2000_1500_s_2.jpg/v1/fill/w_500,h_375,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/baac51_444fa6e3add545a6b3757f46a11ee9de~mv2_d_2000_1500_s_2.jpg" 
+    },
 
 ]
 //obtener productos
@@ -46,7 +64,7 @@ const getProducts=() => {
         //simulamos un restraso de red
         setTimeout(()=>{
             resolve(products)
-        },1000);
+        },2000);
 } );
 };
 

@@ -1,11 +1,14 @@
 .logo{
-    width: 100px;
+    width: 60px;
+   
  
 }
 .menuTienda{
     display: flex;
     flex-direction: row;
-    justify-content: space-around
+    justify-content: space-around;
+
+    
 }
 .menuImg{
     padding: 15px;
@@ -37,12 +40,5 @@
     color: black;
     list-style: none;
 }
-.nosotros{
-    margin: 20px;
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
-    color: black;
-    list-style: none;
-}
+
 

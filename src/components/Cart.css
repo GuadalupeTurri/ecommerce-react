@@ -1,0 +1,32 @@
+.product-cart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 50px;
+   
+}
+.product-cart img{
+        width: 250px;
+}
+
+.button-cart{
+    background-color:#FAAC44;
+    border: none;
+    color: white; 
+    padding: 15px 32px; 
+    text-align: center; 
+    text-decoration: none; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    transition-duration: 0.4s; 
+    cursor: pointer; 
+    border-radius: 12px; 
+}
+.button-cart:hover {
+    background-color: black; 
+  }
+.carrito-vacio{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
