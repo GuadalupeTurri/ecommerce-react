@@ -1,14 +1,17 @@
 import ItemCount from "./ItemCount"
 import './ItemList.css'
-import { useContext } from "react"
+import { useContext, useState } from "react"
 import { CartContex } from "../context/CartContex"
+import { Link } from "react-router-dom"
 
 const ItemDetail = ({product}) => {
-  const {añadirProducto } = useContext(CartContex)
+  const {añadirProducto } = useContext(CartContex);
+  const [agregadoAlCarrito, setAgregadoAlCarrito] = useState(false);
 
   const addProduct = (count) => {
     const productCart = { ...product, quantity: count }
     añadirProducto(productCart)
+    setAgregadoAlCarrito(true);
 
   }
   return (
@@ -20,8 +23,11 @@ const ItemDetail = ({product}) => {
         <h2>{product.name}</h2>
         <h3>{product.description}</h3>
         <p className="precio">${product.price}</p>
-      <ItemCount stock={product.stock} addProduct={addProduct}/>
-        <button className="button-detail">Comprar</button>
+        {agregadoAlCarrito ? (
+         <Link to="/cart"><button className="button-detail">Terminar Compra</button></Link> 
+        ):(
+          <ItemCount stock={product.stock} addProduct={addProduct}/>
+        )};
       </div>
       </div>
   )

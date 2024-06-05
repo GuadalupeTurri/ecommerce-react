@@ -1,10 +1,26 @@
-.contador{
+
+.contador {
     display: flex;
-    flex-direction: row;
-}
-.contador .botones-contador{
-    margin: 7px;
-    border :  solid black 2px;
-    border-radius: 10px;
-    
-}
+    align-items: center;
+  }
+  
+  .botones-contador {
+    background-color: #F7853A;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    margin: 0 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .botones-contador:hover {
+    background-color:  #f56200;
+  }
+  
+  .textoContador {
+    font-size: 18px;
+    margin: 0 10px;
+  }

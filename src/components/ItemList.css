@@ -1,46 +1,43 @@
- .items-container.items-container{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-   
-
-}
-.items-container .items{
-    display: flex;
-    flex-direction: column;
-    width: 20%;
-    border: double  black ;  
-    margin: 50px;
-}
-.items-container .items img{
-    width: 100%
-}
-.items-container .items h2{
-    display: flex;
-    justify-content: center;
-}
-.items-container .items .parrafo{
-    display: flex;
-   justify-content: center;
-    font-size: 20px;
-    border: double  black ;  
-  
-
+.items-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
 }
 
-.detalle{
-   
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-    background-color: black;
-    color: aliceblue;
-    border-radius: 50px;
-    font-size: 16px;
-    padding: 10px;
-    margin: 10px;
-    
+.items {
+  width: 300px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.items img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.items h2 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.items .parrafo {
+  font-size: 1rem;
+  color: #333;
+}
+
+.items .detalle {
+  display: block;
+  margin-top: 10px;
+  color: #F7853A;
+  text-decoration: none;
+}
+
+.items .detalle:hover {
+  text-decoration: underline;
 }
 .contenedor-detail{
         display: flex;
@@ -62,11 +59,39 @@
    
 }
 .button-detail{
-    margin-left: 5%;
-    width: 100px;
-    border-radius: 50px;
-    border: double;
-    background-color:black;
-    color: aliceblue;
-  
+    background-color: black; 
+  border: none; 
+  color: white; 
+  padding: 15px 32px; 
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block; 
+  font-size: 16px; 
+  margin: 4px 2px; 
+  cursor: pointer; 
+  border-radius: 8px; 
+  transition-duration: 0.4s; 
+}
+
+.button-detail:hover{
+    background-color: #F7853A;
+}
+
+.loader{
+  border: 6px solid #F7853A; 
+  border-top: 6px solid black; 
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

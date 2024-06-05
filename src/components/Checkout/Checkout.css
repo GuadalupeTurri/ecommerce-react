@@ -1,0 +1,77 @@
+.form {
+    width: 300px;
+    margin: auto;
+    padding: 30px;
+    background-color: rgb(0, 0, 0); 
+    border-radius: 8px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .label {
+    display: block;
+    margin-bottom: 5px;
+    color: #FAAC44; 
+  }
+  
+  .input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #FAAC44; 
+    color: #1b1000; 
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #FAAC44; 
+    color: black; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #f3900e; /* Un tono más oscuro para el hover */
+  }
+
+/* orden css */
+
+.success-container {
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    background-color: black;
+    border-radius: 8px;
+    color: #FAAC44;
+    text-align: center;
+  }
+  
+  .success-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .success-container p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .success-container button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #FAAC44;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .success-container button:hover {
+    background-color:#fc950f ;
+  }

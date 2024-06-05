@@ -10,9 +10,9 @@ const Cart = () => {
     
     if(carrito.length === 0) {
         return(
-            <div>
+            <div className="cart-vacio">
                 <h1>El carrito esta vacio😢 </h1>
-               <Link className="carrito-vacio" to="/"> <IoArrowBackCircle color="#900C3F" size={40}/></Link>
+               <Link className="carrito-vacio" to="/"> <IoArrowBackCircle color="black" size={40}/></Link>
             </div>
         )
 
@@ -31,8 +31,11 @@ const Cart = () => {
                 </div>
             ))
         }
-        <h2>Total: ${precioTotal()} </h2>
-        <button className="button-cart" onClick={vaciarCarrito}>Vaciar carrito</button>
+        <div className="cart-summary">
+            <h2>Total: ${precioTotal()} </h2>
+            <Link to="/checkout">Continuar con mi compra</Link>
+            <button className="button-cart" onClick={vaciarCarrito}>Vaciar carrito</button>
+        </div>
     </div>
   )
 }

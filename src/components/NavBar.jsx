@@ -11,6 +11,7 @@ const NavBar = () => {
             <ul>
                 <Link className='lisas' to="/category/lisas">Lisas</Link>
                 <Link className='estampadas' to="category/estampadas">Estampadas</Link>
+                
                
             </ul>
 
