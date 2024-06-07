@@ -23,6 +23,6 @@ Bienvenidos a RawShop, es una tienda de gorras con estilo , tenemos dos categori
 
 Email: magaliturri@gmail.com
 
-<a src= "linkedin.com/in/guadalupe-turri-852a92156">Linkedin
+Linkedin : linkedin.com/in/guadalupe-turri-852a92156
 
-<a src="github.com/GuadalupeTurri "> GitHub
+GitHub : github.com/GuadalupeTurri 
