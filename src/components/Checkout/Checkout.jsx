@@ -6,6 +6,8 @@ import { CartContex } from "../../context/CartContex"
 import { addDoc, collection, Timestamp } from "firebase/firestore"
 import db from "../../db/db.js"
 import "./Checkout.css"
+import validateForm from "../../utils/validationYup.js"
+import { toast } from "react-toastify"
 
 const Checkout = () => {
 
@@ -13,6 +15,7 @@ const Checkout = () => {
         nombre: "",
         telefono:"",
         email:"",
+    
     })
     const [idOrden, setIdOrden] = useState(null)
     const {carrito, precioTotal, vaciarCarrito} = useContext(CartContex)
@@ -21,7 +24,7 @@ const Checkout = () => {
         setDatosForm({ ...datosForm, [event.target.name]: event.target.value })
     }
 
-    const handleSubmitForm=(event)=>{
+    const handleSubmitForm= async(event)=>{
         event.preventDefault()
         
         const orden = {
@@ -29,8 +32,20 @@ const Checkout = () => {
             productos: [...carrito],
             fecha: Timestamp.fromDate(new Date()),
             total: precioTotal(),
+        };
+        try{
+            const response= await validateForm(datosForm) ;
+        if(response.status === "success"){
+            generateOrder(orden);
+        }else{
+    
+            toast.warning(response.message)
         }
-        generateOrder(orden);
+        }catch (error){
+           toast.warning(error) 
+        }
+        
+       
     };
 
     const generateOrder=(orden)=>{

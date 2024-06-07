@@ -7,6 +7,8 @@ import ItemList from './components/ItemList'
 import { CartProvider } from './context/CartContex'
 import Cart from './components/Cart'
 import Checkout from "./components/Checkout/Checkout"
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
  
@@ -17,6 +19,7 @@ function App() {
     <BrowserRouter>
     <CartProvider>
       <NavBar/>
+      <ToastContainer theme="dark"/>
     <Routes>
         <Route path="/" element={ <ItemListContainer saludo="Bienvenidos a la RawShop" /> } />
         <Route path="/category/:idCategory" element={ <ItemList/>} />  

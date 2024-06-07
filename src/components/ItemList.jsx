@@ -55,7 +55,7 @@ const ItemList = () => {
 
     return (
         <div className="items-container">
-            {loading ? ( // Si está cargando, muestra "Cargando..."
+            {loading ? ( // Si está cargando, muestra "Cargando..." 
                 <div className="loader"></div>
             ) : (
                 // Si no está cargando, muestra la lista de productos
